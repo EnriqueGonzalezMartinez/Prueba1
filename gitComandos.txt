@@ -1,0 +1,12 @@
+git clone "direccion del repositorio".- Es para colonar un repositorio
+git status.- Nos permite ver los archivos que seran agregados al repositorio
+git add "nombre archivo".- Es para mover los archivos del working directory al staging area 
+git pull.- Es para descargar los cambios recientes que se le han echo al repositorio
+git log.- Que es para ver todos los commits que se han echo recientemente
+git commit -m "mensaje".- Es para pasar los archivos del staging area al repositirio 
+git push.- Es para subir los cambios a nuestro repositorio
+git init.- Es para indicar a git que vamos a crear un proyecto nuevo o uno ya creado pero que utilizaremos git
+git checkout -- "nombre archivo".- Es para revertir los cambios de los archivos
+git diff "nombre del archivo".- Es para ver las diferencias hechas en los archivos
+git branch.- Es para saber las ramas que existen en tu proyecto, para crear una rama y para sber en cual estas, para cambiar de rama usa checkout "nombre rama"
+
