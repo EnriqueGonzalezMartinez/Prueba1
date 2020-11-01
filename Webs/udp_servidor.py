@@ -1,3 +1,6 @@
+# Enrique Adrian Gonzalez Martinez
+# programa que crea un servidor udp en la ip y puerto indicada
+# 24/10/2020  10:33 a.m.
 import socket
 
 direccion = ('127.0.0.1', 2000)

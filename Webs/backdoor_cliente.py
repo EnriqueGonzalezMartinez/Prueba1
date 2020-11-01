@@ -1,3 +1,6 @@
+# Enrique Adrian Gonzalez Martinez
+# programa que ingresa a una backdoor con la ip y puerto indicado
+# 24/10/2020  2:26 p.m.
 import socket
 
 direccion = ('127.0.0.1', 2000)

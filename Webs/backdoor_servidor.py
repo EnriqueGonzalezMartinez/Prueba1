@@ -1,3 +1,6 @@
+# Enrique Adrian Gonzalez Martinez
+# programa que crea a una backdoor en la ip y puerto indicado
+# 24/10/2020  2:40 p.m.
 import socket
 import os
 

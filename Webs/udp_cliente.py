@@ -1,3 +1,6 @@
+# Enrique Adrian Gonzalez Martinez
+# programa que ingresa a un servidor udp con la ip y puerto indicada
+# 24/10/2020  9:46 a.m.
 import socket
 
 direccion = ('127.0.0.1', 2000)
