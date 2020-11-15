@@ -16,7 +16,7 @@ def metaData(img):
         # decode bytes 
         #if isinstance(data, bytes):
         #    data = data.decode()
-        print(f"{tag:25}: {data}, {imagename}")
+        print(f"{imagename}")
     
     
 images = os.listdir("images")

@@ -89,7 +89,7 @@ def metaData(img):
         # decode bytes 
         if isinstance(data, bytes):
             data = data.decode()
-        meta.append(f"{tag}:{data}")
+        meta.append(f"{tag}: {data}\n")
     return meta
       
     
@@ -100,9 +100,10 @@ down_image(url)
 
 images = os.listdir("images")
 carpeta = os.mkdir("metadata")
-for i in range(1, len(images)):
+for i in range(1, len(images) + 1):
     meta = metaData(f"images/image{i}.jpg")
-    with open(f"metadata/metaData{i}.txt","w") as file:
+    with open(f"metadata/metaData{i}.txt","w", encoding="utf-8") as file:
        for line in meta:
           file.write(line)
+          
 

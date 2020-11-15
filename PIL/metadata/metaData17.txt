@@ -1,0 +1,16 @@
+ExifVersion: 0221
+ColorSpace: 65535
+ExifImageWidth: 912
+ExifImageHeight: 684
+ImageWidth: 1260
+ImageLength: 945
+BitsPerSample: (8, 8, 8)
+PhotometricInterpretation: 2
+Orientation: 1
+SamplesPerPixel: 3
+XResolution: 72.0
+YResolution: 72.0
+ResolutionUnit: 2
+ExifOffset: 232
+Software: Adobe Photoshop CS6 (Windows)
+DateTime: 2020:11:04 10:56:22
