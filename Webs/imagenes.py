@@ -1,3 +1,7 @@
+# Enrique Adrian Gonzalez Martinez
+# script que saca e imprime en pantalla los enlaces de las imagenes .jpg de una pagina web
+# ‎14‎/10/‎2020, ‏‎10:48 a. m.
+
 import requests
 from bs4 import BeautifulSoup as bs
 

@@ -1,3 +1,7 @@
+# Enrique Adrian Gonzalez Martinez
+# script que saca los enlaces de las imagenes .jpg de una pagina web y las descarga
+# ‎14‎/10/‎2020, ‏‎1:25 p. m.
+
 import requests
 from bs4 import BeautifulSoup as bs
 
@@ -11,3 +15,4 @@ for img in imag:
     img_name = img[last + 1:]
     with open("C:\\Users\\Adrian\\Pictures\\"+ img_name,'wb') as file:
         file.write(requests.get(img).content)
+        print(f'Se descargo: {img_name}')
