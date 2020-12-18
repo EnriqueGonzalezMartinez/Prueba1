@@ -1,0 +1,3 @@
+instalar pipreqs con: pip install pipreqs
+
+para sacar el requirements: pipreqs 'ruta del proyecto'

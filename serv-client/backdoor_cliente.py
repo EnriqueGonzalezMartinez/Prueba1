@@ -3,7 +3,7 @@
 # 24/10/2020  2:26 p.m.
 import socket
 
-direccion = ('127.0.0.1', 2000)
+direccion = ('192.168.100.13', 2000)
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as cliente:
     cliente.connect(direccion)
