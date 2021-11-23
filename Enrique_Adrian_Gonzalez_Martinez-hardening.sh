@@ -12,6 +12,7 @@ then
 	fi
 	# Install the ClamAV and Epel packages
 	sudo yum install -y https://www.clamav.net/downloads/production/clamav-0.104.1.linux.x86_64.rpm
+	sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 	# Update all packages
 	sudo yum -y update
 # This if verifies that the OS is centos and the version is 8
